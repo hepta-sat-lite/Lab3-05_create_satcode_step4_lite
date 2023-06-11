@@ -4,7 +4,7 @@
 HEPTA_CDH cdh(PB_5, PB_4, PB_3, PA_8, "sd");
 HEPTA_EPS eps(PA_0,PA_4);
 DigitalOut condition(PB_1);
-Serial gs(USBTX,USBRX,9600);
+RawSerial gs(USBTX,USBRX,9600);
 Timer sattime;
 int rcmd = 0, cmdflag = 0; //command variable
 
