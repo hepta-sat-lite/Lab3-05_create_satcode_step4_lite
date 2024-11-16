@@ -1,8 +1,8 @@
 #include "mbed.h"
-#include "HEPTA_EPS.h"
-#include "HEPTA_CDH.h"
-HEPTA_CDH cdh(PB_5, PB_4, PB_3, PA_8, "sd");
-HEPTA_EPS eps(PA_0,PA_4);
+#include "LITE_EPS.h"
+#include "LITE_CDH.h"
+LITE_CDH cdh(PB_5, PB_4, PB_3, PA_8, "sd", PA_3);
+LITE_EPS eps(PA_0,PA_4);
 DigitalOut condition(PB_1);
 RawSerial gs(USBTX,USBRX,9600);
 Timer sattime;
