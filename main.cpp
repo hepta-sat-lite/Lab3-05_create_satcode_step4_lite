@@ -57,7 +57,7 @@ int main() {
                for(int j=0;j<5;j++){
                 gs.printf("HEPTASAT::Hello World!\r\n");
                 cond[0] = 0;
-                wait(1);
+                wait_ms(1000);
                 cond[0] = 1;
                }
             }
@@ -84,8 +84,9 @@ int main() {
         }
         
         //Operation Interval
-        wait(1.0);
+        wait_ms(1000);
     }
+    cond[0] = 0;
     sattime.stop();
     gs.printf("From Sat : Operation Stop...\r\n");
 }
